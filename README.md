@@ -1,5 +1,5 @@
 Contao TinyMceAdvancedList Extension
-======================================
+====================================
 
 Special TinyMCE plugin to add more advanced options to the ordered and unordered list buttons.
 
