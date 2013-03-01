@@ -1,5 +1,5 @@
-Contao TinyMceAdvancedList Extension
-====================================
+Contao Extension: TinyMceAdvancedList
+=====================================
 
 Special TinyMCE plugin to add more advanced options to the ordered and unordered list buttons.
 
@@ -23,7 +23,7 @@ Compatibility
 -------------
 
 - min. version: Contao 2.9.5
-- max. version: Contao 2.11.6
+- max. version: Contao 2.11.x
 
 
 Dependency
