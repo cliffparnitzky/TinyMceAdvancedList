@@ -32,7 +32,7 @@
 * Class TinyMceAdvancedList
 *
 * Class to implement the HOOK for adding configs.
-* @copyright  Cliff Parnitzky 2013
+* @copyright  Cliff Parnitzky 2013-2014
 * @author     Cliff Parnitzky
 */
 class TinyMceAdvancedList {
