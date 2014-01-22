@@ -21,15 +21,32 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2012-2014
+ * @copyright  Cliff Parnitzky 2013-2014
  * @author     Cliff Parnitzky
  * @package    TinyMceAdvancedList
+ * @license    LGPL
  * @license    LGPL
  */
 
 /**
- * Define name and tooltip for preferences (inactive modules)
- */
-$GLOBALS['TL_LANG']['MOD']['TinyMceAdvancedList'] = array('TinyMCE Listenerweiterungs Plugin', 'Spezielles TinyMCE Plugin das verbesserte Optionen für geordnete und ungeordnete Listen zur Verfügung stellt.');
-
+* Class TinyMceAdvancedList
+*
+* Class to implement the HOOK for adding configs.
+* @copyright  Cliff Parnitzky 2013
+* @author     Cliff Parnitzky
+*/
+class TinyMceAdvancedList {
+	
+	/**
+	 * Adding config for output behavoir
+	 */
+	public function editTinyMcePluginLoaderConfig ($arrTinyConfig) {
+		$arrTinyConfig["content_css"] = substr($arrTinyConfig["content_css"], 0, strlen($arrTinyConfig["content_css"]) -1)
+									  . ','
+									  . TL_PATH . '/system/modules/TinyMceAdvancedList/assets/tinymce_advlist.css'
+									  . '"';
+		return $arrTinyConfig;
+	}
+}
+ 
 ?>
