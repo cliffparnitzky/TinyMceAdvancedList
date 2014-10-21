@@ -1,0 +1,36 @@
+{
+	"name":"cliffparnitzky/tiny-mce-advanced-list",
+	"description":"Special TinyMCE plugin to add more advanced options to the ordered and unordered list buttons.",
+	"keywords":["contao","tinymce","tiny editor","tinymce plugin"],
+	"type":"contao-module",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Cliff Parnitzky",
+			"email":"contao@cliff-parnitzky.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"contao@cliff-parnitzky.de",
+		"issues":"https://github.com/cliffparnitzky/TinyMceAdvancedList/issues",
+		"source":"https://github.com/cliffparnitzky/TinyMceAdvancedList"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":">=2.9.5,<3.3.0",
+		"contao-community-alliance/composer-installer":"*",
+		"cliffparnitzky/tiny-mce-plugin-loader":"1.0.0"
+	},
+	"extra":{
+		"contao":{
+			"sources":{
+				"assets/tinymce/plugins/advlist":"assets/tinymce/plugins/advlist",
+				"system/modules/TinyMceAdvancedList":"system/modules/TinyMceAdvancedList"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}
