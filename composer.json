@@ -1,7 +1,7 @@
 {
 	"name":"cliffparnitzky/tiny-mce-advanced-list",
 	"description":"Special TinyMCE plugin to add more advanced options to the ordered and unordered list buttons.",
-	"keywords":["contao","tinymce","tiny editor","tinymce plugin"],
+	"keywords":["contao","tinymce","tiny editor","tinymce plugin","advanced list"],
 	"type":"contao-module",
 	"license":"LGPL-3.0+",
 	"authors":[
