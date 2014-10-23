@@ -41,10 +41,21 @@ class TinyMceAdvancedList {
 	 * Adding config for output behavoir
 	 */
 	public function editTinyMcePluginLoaderConfig ($arrTinyConfig) {
-		$arrTinyConfig["content_css"] = substr($arrTinyConfig["content_css"], 0, strlen($arrTinyConfig["content_css"]) -1)
-									  . ','
-									  . TL_PATH . '/system/modules/TinyMceAdvancedList/assets/tinymce_advlist.css'
-									  . '"';
+		$contentCss = $arrTinyConfig["content_css"];
+		if (strlen($contentCss) > 3)
+		{
+			// remove enclosing quotes and ending comma
+			$contentCss = substr($contentCss, 1, strlen($contentCss) - 3);
+			
+			// add a comma
+			$contentCss .= ',';
+		}
+		$contentCss .= TL_PATH . '/system/modules/TinyMceAdvancedList/assets/tinymce_advlist.css';
+		
+		// put the value into the array
+		
+		$arrTinyConfig["content_css"] = '"' . $contentCss . '",';
+		
 		return $arrTinyConfig;
 	}
 }
