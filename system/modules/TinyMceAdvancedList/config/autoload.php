@@ -3,7 +3,7 @@
 /**
  * Contao Open Source CMS
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * Copyright (c) 2005-2015 Leo Feyer
  *
  * @package TinyMceAdvancedList
  * @link    https://contao.org
@@ -12,9 +12,19 @@
 
 
 /**
+ * Register the namespaces
+ */
+ClassLoader::addNamespaces(array
+(
+	'TinyMceAdvancedList',
+));
+
+
+/**
  * Register the classes
  */
 ClassLoader::addClasses(array
 (
-	'TinyMceAdvancedList' => 'system/modules/TinyMceAdvancedList/TinyMceAdvancedList.php',
+	// Classes
+	'TinyMceAdvancedList\TinyMceAdvancedList' => 'system/modules/TinyMceAdvancedList/classes/TinyMceAdvancedList.php',
 ));
