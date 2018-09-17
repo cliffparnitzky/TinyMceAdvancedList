@@ -29,7 +29,6 @@ https://github.com/cliffparnitzky/TinyMceAdvancedList/issues
 Compatibility
 -------------
 
-- Contao version >= 3.3.0 ... <  3.6.0
 - Contao version >= 4.4.0
 
 
