@@ -9,7 +9,7 @@ Special TinyMCE plugin to add more advanced options to the ordered and unordered
 
 The sources of this plugin could be found [here](http://www.tinymce.com/wiki.php/Plugin:advlist).
 
-Now for TinyMCE 4.
+Now for TinyMCE 5.
 
 
 Installation
@@ -29,7 +29,7 @@ https://github.com/cliffparnitzky/TinyMceAdvancedList/issues
 Compatibility
 -------------
 
-- Contao version >= 4.4.0
+- Contao version >= 4.13.0
 
 
 Dependency
