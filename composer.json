@@ -3,7 +3,7 @@
 	"description":"Special TinyMCE plugin to add more advanced options to the ordered and unordered list buttons.",
 	"keywords":["contao","tinymce","tiny editor","tinymce plugin","advanced list","tinymce4"],
 	"type":"contao-module",
-	"license":"LGPL-3.0+",
+	"license":"LGPL-3.0-or-later",
 	"authors":[
 		{
 			"name":"Cliff Parnitzky",
