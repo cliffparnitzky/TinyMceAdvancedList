@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2015 Leo Feyer
+ * Copyright (C) 2005-2022 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,7 +21,7 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2013-2015
+ * @copyright  Cliff Parnitzky 2013-2022
  * @author     Cliff Parnitzky
  * @package    TinyMceAdvancedList
  * @license    LGPL
@@ -37,7 +37,7 @@ namespace TinyMceAdvancedList;
 * Class TinyMceAdvancedList
 *
 * Class to implement the HOOK for adding configs.
-* @copyright  Cliff Parnitzky 2013-2015
+* @copyright  Cliff Parnitzky 2013-2022
 * @author     Cliff Parnitzky
 */
 class TinyMceAdvancedList {
@@ -46,7 +46,7 @@ class TinyMceAdvancedList {
 	 * Adding config for output behavoir
 	 */
 	public function editTinyMcePluginLoaderConfig ($arrTinyConfig) {
-		$contentCss = $arrTinyConfig["content_css"];
+		$contentCss = trim($arrTinyConfig["content_css"]);
 		if (strlen($contentCss) > 3)
 		{
 			// remove enclosing quotes and ending comma
